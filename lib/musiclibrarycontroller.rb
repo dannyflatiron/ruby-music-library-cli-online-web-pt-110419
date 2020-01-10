@@ -89,8 +89,8 @@ end
   #     # song = list_of_the_song[input]
     song = Song.all.sort {|a,b| a.name <=> b.name}.uniq[input - 1]
     puts "Playing #{song.name} by #{song.artist.name}"
-
-  end
+    binding.pry
+    end
   #
   # end
     # what does this method want me to do?
@@ -100,7 +100,6 @@ end
     # array can store infinite amount of songs so users input isn't finite it also can be infinite which means we need to use a range
     # how do I use a range and compare it to something else to return a comparison value
 
-    #  binding.pry
   end
 
 end
